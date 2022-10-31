@@ -1,5 +1,10 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.portfolio.cgas.Security.jwt;
+
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -19,5 +24,7 @@ public class JwtEntryPoint implements AuthenticationEntryPoint{
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
         logger.error("Falló el metodo commence ");
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
-    }  
+    }
+    
+    
 }

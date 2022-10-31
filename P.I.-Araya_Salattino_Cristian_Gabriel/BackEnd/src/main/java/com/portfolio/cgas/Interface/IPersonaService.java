@@ -1,4 +1,3 @@
-
 package com.portfolio.cgas.Interface;
 
 import com.portfolio.cgas.Entity.Persona;
