@@ -15,7 +15,8 @@
                 <a href="">
                     <img src="../../../assets/github.png" id="github" alt="githubLogo">
                 </a>
-                <button type="button" class="btn btn-outline-light" (click)="login()">Ingresar</button>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
             </div>
         </div>
     </div>
