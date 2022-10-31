@@ -2,7 +2,7 @@
 package com.portfolio.cgas.Security.Service;
 
 import com.portfolio.cgas.Security.Entity.Usuario;
-import com.portfolio.cgas.Security.Repository.IUsuarioRepository;
+import com.portfolio.cgas.Security.Repository.iUsuarioRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,17 +12,17 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class UsuarioService {
     @Autowired
-    IUsuarioRepository iusuarioRepository;
+    iUsuarioRepository iusuarioRepository;
     
     public Optional<Usuario> getByNombreUsuario(String nombreUsuario){
         return iusuarioRepository.findByNombreUsuario(nombreUsuario);
     }
     
-    public boolean existByNombreUsuario(String nombreUsuario){
+    public boolean existsByNombreUsuario(String nombreUsuario){
         return iusuarioRepository.existsByNombreUsuario(nombreUsuario);
     }
     
-    public boolean existByEmail (String email){
+    public boolean existsByEmail(String email){
         return iusuarioRepository.existsByEmail(email);
     }
     

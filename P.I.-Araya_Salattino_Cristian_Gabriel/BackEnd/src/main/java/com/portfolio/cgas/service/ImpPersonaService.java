@@ -1,7 +1,7 @@
 package com.portfolio.cgas.Service;
 
-import com.portfolio.cgas.Interface.IPersonaService;
 import com.portfolio.cgas.Entity.Persona;
+import com.portfolio.cgas.Interface.IPersonaService;
 import com.portfolio.cgas.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class ImpPersonaService implements IPersonaService{
     @Override
     public List<Persona> getPersona() {
         List<Persona> persona = ipersonaRepository.findAll();
-        return persona;            
+        return persona;
     }
 
     @Override
@@ -31,6 +31,5 @@ public class ImpPersonaService implements IPersonaService{
     public Persona findPersona(Long id) {
         Persona persona = ipersonaRepository.findById(id).orElse(null);
         return persona;
-    }
-    
+    }   
 }

@@ -3,15 +3,14 @@ package com.portfolio.cgas.Security.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-
 public class LoginUsuario {
     @NotBlank
     private String nombreUsuario;
-    
     @NotBlank
     private String password;
+    
+    //Getter & Setter
 
-    //get set
     public String getNombreUsuario() {
         return nombreUsuario;
     }

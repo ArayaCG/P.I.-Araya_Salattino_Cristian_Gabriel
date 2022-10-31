@@ -5,7 +5,7 @@ package com.portfolio.cgas.Security.Controller;
 public class Mensaje {
     private String mensaje;
     
-    //costructores
+    //Constructor
 
     public Mensaje() {
     }
@@ -13,15 +13,13 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
+    //Getter y Setter
 
-    //getset
     public String getMensaje() {
         return mensaje;
     }
 
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
-    }
-    
-    
+    }   
 }
