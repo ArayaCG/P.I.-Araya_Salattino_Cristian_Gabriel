@@ -1,8 +1,8 @@
-package com.portfolio.cgas.service;
+package com.portfolio.cgas.Service;
 
 import com.portfolio.cgas.Interface.IPersonaService;
-import com.portfolio.cgas.entity.Persona;
-import com.portfolio.cgas.repository.IPersonaRepository;
+import com.portfolio.cgas.Entity.Persona;
+import com.portfolio.cgas.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

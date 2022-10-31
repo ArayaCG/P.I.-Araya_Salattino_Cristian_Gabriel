@@ -1,13 +1,10 @@
 
 package com.portfolio.cgas.Interface;
 
-import com.portfolio.cgas.entity.Persona;
+import com.portfolio.cgas.Entity.Persona;
 import java.util.List;
 
-/**
- *
- * @author User
- */
+
 public interface IPersonaService {
     //Traer una lista de persona
     public List<Persona> getPersona();
